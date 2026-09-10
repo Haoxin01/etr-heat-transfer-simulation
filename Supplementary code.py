@@ -454,7 +454,7 @@ def run_simulation(curve_time_s, curve_temperature_c):
 
         while (
             csv_index < len(CSV_TIMES)
-            and current_time_s >= CSV_TIMEScsv_index] - 1e-12
+            and current_time_s >= CSV_TIMES[csv_index] - 1e-12
         ):
             output_time_s = CSV_TIMES[csv_index]
             sample_top_center_c = temperature[
